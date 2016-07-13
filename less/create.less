@@ -1,0 +1,183 @@
+@input_w:335px;
+.label{
+	width:125px;
+	font-size:16px;
+	font-weight:bold;
+	margin-right:10px;
+	display:inline-block;
+	text-align:right;
+	vertical-align:-2px;
+}
+.input_text{
+	display:inline-block;
+	width:@input_w;
+	height:30px;
+	// position:absolute;
+	// right:0;
+	box-sizing:border-box;	
+	padding:0 2px;	
+}
+.btn{
+	display:inline-block;
+	width:72px;
+	height:38px;
+	background-color:rgb(22, 155, 213);
+	line-height:38px;
+	border:0;
+	color:#fff;
+	border-radius:6px;
+}
+.list{
+	position:relative;
+	// overflow:hidden;
+	// height:30px;
+	line-height:30px;
+	margin:10px auto;
+}
+
+label{
+	.label;
+}
+input,textarea{
+	margin-left:5px;
+}
+input[type="text"]{
+	.input_text;
+}
+input[type="checkbox"]{
+	width:14px;
+	height:14px;
+	display:inline-block;
+	background-color:#fff;
+	vertical-align: middle;
+}
+input[type="button"]{
+	.btn;
+}
+textarea{
+	display:inline-block;
+	width:@input_w;
+	height:100px;
+	line-height:1.6;
+	padding:0 2px;
+}
+select{
+	height:30px;
+	border:none;
+	font-size:12px;
+	
+}
+#create,#gameInfo,#iconUp,#post{
+	width:700px;
+	margin:30px auto;
+	overflow:hidden;
+	padding-bottom: 24px;
+	border-bottom:1px dotted red;
+	.title{
+		font-size:25px;
+		display:inline-block;
+		font-weight:bold;
+		margin:10px 0 10px;
+	}	
+}
+#create{
+	.detail2 label,.detail2 textarea{
+		float:left;
+	}
+}
+#gameInfo{
+	.APK{
+		input{
+			margin-left: -2px;
+		}
+	}
+	.choose{
+		margin-left: 142px;
+	}
+	.choose label{
+		font-size: 13px;
+		font-weight:normal;
+		text-align:center;
+		margin-right: 25px;
+		display:inline;
+		input{
+			margin-right:5px;
+		}
+	}
+	.platform{
+		font-size:13px;
+	}
+	.other{
+		input{
+			width:250px;
+		}		
+	}
+	.size{
+		input{
+			width:100px;
+			margin-right:8px;
+		}
+	}
+	.version{
+		input{
+			width:100px;
+		}
+	}
+	.pack{
+		input{
+			width:250px;
+		}
+	}
+	.pull{
+		input{
+			width:200px;
+		}
+		font{
+			color:red;
+		}
+	}
+}
+#iconUp{
+	    ul{
+	    	margin: 20px 0 10px 147px;
+	    }
+
+	.icon{
+		&>div{
+			margin-top:20px;
+		}
+		img{
+			width:134px;
+			height:134px;
+			vertical-align:middle;
+			margin-left:147px;
+
+		}
+		ol{
+			width:250px;
+			display:inline-block;
+			vertical-align:middle;
+		}
+	}
+	.icon2{
+		img{
+			width:157px;
+			height:179px;
+		}
+		li{
+			float:left;
+			width:160px;
+			text-align:center;
+			margin-right:15px;
+			margin-bottom: 15px;	
+		}			
+	}
+}
+#post{
+	input{
+		.btn;
+		display:block;
+		width:150px;
+		margin:0 auto;
+	}
+}

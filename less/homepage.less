@@ -1,0 +1,603 @@
+@border:1px solid #000;
+@btn_blue:#169BD5;
+.btn{
+	display:block;
+	width:80px;
+	height:30px;
+	margin:20px auto;
+	background-color:@btn_blue;
+	color:#fff;
+	border:none;
+	.border-radius-mixin(3px);	
+}
+//Mixin
+.rotate-mixin(@rdeg:30deg){
+	transform:rotate(@rdeg);
+	-moz-transform:rotate(@rdeg);
+	-o-transform:rotate(@rdeg);
+	-webkit-transform:rotate(@rdeg);
+	filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+.scale-mixin(@s:0.5){
+	transform:scale(@s);
+	-moz-transform:scale(@s);
+	-o-transform:scale(@s);
+	-webkit-transform:scale(@s);
+}
+.rotate-mixin(@rdeg:180deg){
+	transform:rotate(@rdeg);
+	-moz-transform:rotate(@rdeg);
+	-o-transform:rotate(@rdeg);
+	-webkit-transform:rotate(@rdeg);
+	filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+.animation-mixin(@animation-name,@animation-duration,@animation-timing-function,@animation-delay,@animation-iteration-count,@animation-direction){
+	animation:@arguments;
+	-moz-animation:@arguments;
+	-webkit-animation:@arguments;
+	-o-animation:@arguments;
+}
+.transition-mixin(@prop:all,@time:.3s,@ease:ease){
+	-webkit-transition: @prop @time @ease;
+	-moz-transition: @prop @time @ease;
+	-o-transition: @prop @time @ease;
+	-ms-transition: @prop @time @ease;
+	transition: @prop @time @ease;
+}
+.border-radius-mixin(@br:0){
+	-webkit-border-radius: @br;
+	-moz-border-radius: @br;
+	border-radius: @br;
+}
+//动画
+@keyframes sf{
+	0%{
+		.scale-mixin(1);			
+	}
+	50%{
+		.scale-mixin(1.1);
+	}
+	100%{		
+		.scale-mixin(1);	
+	}	
+}
+@-moz-keyframes sf{
+	0%{
+		.scale-mixin(1);			
+	}
+	50%{
+		.scale-mixin(1.1);
+	}
+	100%{		
+		.scale-mixin(1);	
+	}	
+}
+@-webkit-keyframes sf{
+	0%{
+		.scale-mixin(1);			
+	}
+	50%{
+		.scale-mixin(1.1);
+	}
+	100%{		
+		.scale-mixin(1);	
+	}	
+}
+@-o-keyframes sf{
+	0%{
+		.scale-mixin(1);			
+	}
+	50%{
+		.scale-mixin(1.1);
+	}
+	100%{		
+		.scale-mixin(1);	
+	}	
+}
+
+#wrap{
+	@li-width:98px;
+	#create{
+		display:block;
+		width:140px;
+		height:25px;
+		line-height:25px;
+		text-align:center;
+		background-color:#fff;
+		color:#666;
+		margin-top:20px;
+	}
+	.game{
+		margin-bottom: 20px;
+	}
+	ul{
+		overflow:hidden;
+	}
+	li{
+		float:left;
+		height:30px;
+		line-height:30px;
+		text-align:center;
+		border:@border;
+		border-right:0;
+		box-sizing:border-box;
+		width:@li-width;
+		&:last-child{
+			border-right:@border;
+		}
+		a{
+			&:hover{
+				color:red;
+			}		
+		}
+
+	}
+	.name{
+		width:@li-width+20;
+	}
+	.version{
+		width:-20+@li-width;
+	}
+	.type{
+		width:-20+@li-width;
+	}
+	.status{
+		width:-20+@li-width;
+	}
+	.operation{
+		width:@li-width*2+40;
+	}	
+	.th{
+		margin-top:30px;
+		background-color:#0A5;
+		font-weight:bold;
+		li{
+			border-bottom:0;			
+		}
+	}
+
+	.gameHead{
+		margin-bottom:5px;
+		background-color:#eee;
+		.detail{
+			cursor:pointer;					
+			&:hover{
+				color:red;
+			}
+			a{
+				display:block;
+				// &:hover{
+				// 	.animation-mixin(sf,2s,linear,0s,infinite,both);		
+				// }				
+			}
+			.rotate{
+				display:inline-block;
+				.rotate-mixin();
+				.transition-mixin();
+			}
+		}		
+	}
+	.gameContent{
+		display:none;
+		margin-left: @li-width+20;
+		width:@li-width*7;
+		background-color:#ccc;
+		width:626px;	
+		li{
+			border-bottom:0;
+		}
+		&:nth-last-of-type(1){
+			border-bottom:@border;
+		}			
+	}
+
+	.page{
+		display:none;
+		white-space:nowrap;
+		margin:10px auto 20px 50%;
+		span{
+			display:inline-block;
+			width:20px;
+			height:10px;
+			cursor:pointer;
+			&:hover{
+				color:red;
+			}
+		}
+	}
+}
+// 弹窗
+.content{
+	textarea{
+		width:100%;
+		display:block;
+	}
+	.sure{
+		display:block;
+		width:80px;
+		height:30px;
+		text-align:center;
+		line-height:30px;
+		border:@border;
+		border-color:transparent;
+		color:#fff;
+		margin:35px auto 12px;
+		background-color:@btn_blue;
+		&:hover{
+			background-color:#666;
+			color:#fff;
+		}
+		&:active{
+			
+		}
+	}	
+}
+
+.tan_upLevel{
+	@blue:#43B9DF;
+	@label1_w:130px;
+	@label1_mr:30px;
+	// display:block;
+	font-size:14px;
+	.content>div{
+		margin-top:10px;
+	}
+	input,label{
+		display:inline-block;
+	}
+	#upV{
+		color:#fff;
+		cursor:pointer;
+	}
+	label{
+		width:@label1_w;
+		font-size:16px;
+		font-weight:bold;
+		text-align:right;
+		// vertical-align: middle;
+		margin-right:@label1_mr;
+	}
+	input{
+		// color:#fff;
+		height:18px;
+		font-size:14px;	
+		vertical-align:middle;
+		margin-right:5px;
+	}
+	#upV{
+		background-color:@blue;
+		border-color:@blue;
+		width:100px;
+		height:32px;
+		line-height:32px;
+	}
+	// APK
+	.apk{
+		margin-top:10px;
+		div{
+			display:inline-block;
+			width:50px;
+			height: 30px;
+			line-height:30px;
+			background-color:@blue;
+			color:#fff;
+			text-align:center;
+			.border-radius-mixin(5px);
+		}
+	}
+	// 游戏平台
+	// .platform{
+	// 	}
+	// 游戏种类
+	.gameType{
+		p:not(:first-child){
+			margin-left:@label1_w+@label1_mr+8;
+			label{
+				font-size:.8em;
+				text-align:center;
+				width:auto;
+				margin-right:15px;
+
+			}			
+		}
+	}
+	//游戏类型
+	.gameType2{
+		// label{
+		// 	margin-right: -6+@label1_mr;
+		// }
+	}
+	.size,.gameVersion{
+		input[type="text"]{
+			width:80px;
+		}
+	}
+	// 游戏大小
+	// .size{
+	// }
+	// 游戏版本
+	// .gameVersion{
+	// }
+	//应用包名
+	.packName{
+		input[type="text"]{
+			width:200px;
+		}
+	}
+	// 首发/更新时间
+	.upd{
+		font{
+			font-size:.8em;
+			position:absolute;
+			color:red;
+		}
+	}
+	//版本更新说明
+	.explain{
+		overflow: hidden;
+		label{
+			float:left;
+		}
+		textarea{
+			float:left;
+			width:300px;
+			height:100px;
+			margin-left:7px;
+		}
+	}
+	.tan_upLevel_bt{
+		.btn;
+	}
+}
+.tan_cI{
+	display:none;
+	label{
+		// width:130px;
+		font-size:16px;
+		font-weight:bold;
+		margin-right: 10px;
+	}
+	input:not([type="button"]){
+		font-size:13px;
+		width:350px;
+		height:1.4em;
+	}
+	.guide{
+		a{
+			display:inline-block;
+			width:100px;
+			height:40px;
+			line-height:40px;
+			text-align:center;
+			background-color:#169BD5;
+			font-size:16px;
+			color:#fff;			
+			position:relative;
+			.border-radius-mixin(3px);
+			&:not(:last-child){
+				margin-right:50px;
+				&:after{
+					content:url('../img/jt.png');
+					position:absolute;
+					left:110px;
+					top:20%;
+				}				
+			}
+
+		}
+	}
+	.tab>div{
+		margin:10px 0 10px;
+	}
+	.cGdetail{
+		label{
+			float:left;
+			margin-right: 16px;
+		}
+		textarea{
+			width:354px;
+			height:150px;
+			line-height:1.3;
+		}
+	}
+	.cGpost{
+		.btn;
+	}
+
+}
+.tab_changI_if{
+	// display:none;
+}
+.tab_changI_icon{
+	display:none;
+	ol{
+		display:inline-block;
+		width:235px;
+	}
+	.cGicon{
+		.upIcon{
+			display:inline;
+		}
+		.exp1{
+			margin-left:100px;
+			width:400px;
+			overflow:hidden;
+			img{
+				float:left;
+				width:84px;
+				height:73px;
+			}
+		}		
+	}
+	//cGicon2
+	.cGicon2{
+		label{
+			float:left;
+		}
+		.exp2{
+			display:inline-block;
+			text-align:center;
+			width:118px;
+			margin:10px 20px 0 0;
+			img{
+				width:82px;
+				height:86px;
+			}
+		}
+		.btn{
+			width:70%;
+			margin:10px auto;
+		}
+	}
+	.pics{
+		display:inline-block;
+		width:440px;
+	}
+	.cG2post{
+		.btn;
+	}
+}
+.tab_changI_dt{
+	display:none;
+	overflow:hidden;
+	margin-top:20px;
+	&>div{
+		overflow:hidden;
+	}
+	label{
+		float:left;
+	}
+	textarea{
+		float:left;
+		width:400px;
+		height:200px;
+		&:after{
+
+		}
+	}
+}
+
+.tan_gift{
+	@label2_w:130px;
+	@label2_mr:30px;
+	display:none;
+	table{
+		margin: 0 auto;
+	}
+	th{
+		width:100px;
+		max-width:100px;
+		height:25px;
+		overflow:hidden;
+		white-space:nowrap;
+		text-overflow:ellipsis;
+	}
+	.sp,.de{
+		cursor:pointer;
+	}
+	label{
+		width:@label2_w;
+		margin-right: @label2_mr;
+		font-size:16px;
+		display:inline-block;
+		text-align:right;
+	}
+	input[type="text"]{
+		height:18px;
+		width:230px;
+	}
+	.giftWay input{
+		width:300px;
+	}
+	.giftUp{
+		.btn{
+			display:inline-block;
+			margin:0;
+		}
+		font{
+			margin-left:12px;
+			color:red;
+		}		
+	}
+    [class^="gift"]{
+		margin-bottom:10px;
+    }
+    .giftInput{
+    	.btn;
+    }
+}
+.tan_code{
+	z-index:12;
+	// display:none;
+	width:300px;
+	.content{
+		text-align:center;
+	}
+	input{
+		.btn;
+	}
+	.upCode{
+		display:inline-block;
+	}
+	font{
+		color:red;
+		&:before{
+		    content: '\D\A';
+		    white-space: pre;
+		}
+	}
+}
+//下架申请
+.tan_pull{
+		// display:block;
+		
+		.content{
+			&>div{
+				overflow:hidden;
+			}
+		}
+		label{
+			width:100px;
+			margin-right: 30px;
+			font-size:16px;
+			text-align:right;
+			float:left;			
+		}
+		textarea{
+			width:60%;
+			height:120px;
+			float:left;
+		}
+		.pullpost{
+			.btn;
+		}
+}
+
+//connect.html
+#connect{
+	margin:30px auto;
+	text-align:center;
+}
+
+//document.html
+#document{
+	width:350px;
+	font-size:16px;
+	margin:30px auto;
+	input[type="button"]{
+		.btn;
+		display:inline-block;
+		position:absolute;
+		right:0;
+		top:50%;
+		margin-top:-15px;
+		line-height:30px;
+	}
+	.sdk,.mat{
+		overflow: hidden;
+		height:50px;
+		line-height:50px;
+		position:relative;
+
+	}
+}

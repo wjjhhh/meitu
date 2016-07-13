@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>美图游戏盒开放平台</title>
+	<meta name="description" content="'美图游戏盒'是由Forgame集团与美图公司联袂打造的时尚轻游戏平台。不仅带你同步尽享全球超人气手机游戏，更以精奢界面呈现至美交互体验，是女性玩家的首选游戏APP">
+	<meta name="keywords" content="美图游戏,美图游戏盒,美图游戏盒官方下载,美图官网">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/public.css">
+	<link rel="stylesheet" href="css/tab.css">
+	<link rel="stylesheet" href="css/homepage.css">
+	
+</head>
+<body>
+  <iframe frameboder="0" scrolling="no" width="100%" height="139" src="head.html" style="border:none;"></iframe> 
+  <div id="content">
+		<ul id="tab"><li><a href="document.html">文档</a></li><li class="on"><a href="javascript:void(0);">我的游戏</a></li><li><a href="connect.html">联系我们</a></li></ul>
+  </div>
+  <div class="bline"></div>  
+
+<div id="wrap">
+	<a id="create" href="create.html">创建游戏</a>	
+		<ul class="th">
+			<li class="name">游戏名称</li>
+			<li class="version">游戏版本</li>
+			<li class="type">种类</li>
+			<li class="update">首发/更新时间</li>
+			<li class="up">提交时间</li>
+			<li class="status">状态</li>
+			<li class="check">未通过原因</li>
+			<li class="detail">备注</li>
+			<li class="operation">操作</li>
+		</ul>
+		<div class="game">
+			<ul class="gameHead">
+				<li class="name">捕鱼之海底捞</li>
+				<li class="version">v1.0.13</li>
+				<li class="type">网游</li>
+				<li class="update">2016-05-01</li>
+				<li class="up">2016-05-22</li>
+				<li class="status">未通过</li>
+				<li class="check"><a>查看</a></li>
+				<li class="detail"><a><span>∨</span>审核信息</a></li>
+				<li class="operation"><a class="upl">更新版本</a>|<a class="changeI">修改信息</a>|<a class="gift">新手礼包</a>|<a class="under">下架申请</a></li>
+			</ul>
+			<ul class="gameContent">				
+				<li class="version">v1.0.13</li>
+				<li class="type"></li>
+				<li class="update">2016-04-01</li>
+				<li class="up">2016-04-02</li>
+				<li class="status">未通过</li>
+				<li class="check"><a>查看</a></li>
+				<li class="detail">更新版本</li>
+				
+			</ul>
+			<ul class="gameContent">
+				<li class="version">v1.0.13</li>
+				<li class="type"></li>
+				<li class="update">2016-04-01</li>
+				<li class="up">2016-04-02</li>
+				<li class="status">未通过</li>
+				<li class="check"><a>查看</a></li>
+				<li class="detail">更新版本</li>
+			</ul>
+		<!-- 	<div class="page"><span>|<</span><span><</span><span>1</span><span>2</span><span>3</span><span>></span><span>>|</span></div> -->
+		</div>
+		<div class="game">
+			<ul class="gameHead">
+				<li class="name">美美小店</li>
+				<li class="version">v1.0.13</li>
+				<li class="type">单机</li>
+				<li class="update">2016-05-01</li>
+				<li class="up">2016-05-22</li>
+				<li class="status">未通过</li>
+				<li class="check"><a>查看</a></li>
+				<li class="detail"><a><span>∨</span>审核信息</a></li>
+				<li class="operation"><a class="upl">更新版本</a>|<a class="changeI">修改信息</a>|<a class="gift">新手礼包</a>|<a class="under">下架申请</a></li>
+			</ul>
+			<ul class="gameContent">
+				<li class="version">v1.0.13</li>
+				<li class="type"></li>
+				<li class="update">2016-04-01</li>
+				<li class="up">2016-04-02</li>
+				<li class="status">未通过</li>
+				<li class="check"><a>查看</a></li>
+				<li class="detail">更新版本</li>
+			</ul>
+			<ul class="gameContent">
+				<li class="version">v1.0.13</li>
+				<li class="type"></li>
+				<li class="update">2016-04-01</li>
+				<li class="up">2016-04-02</li>
+				<li class="status">未通过</li>
+				<li class="check"><a>查看</a></li>
+				<li class="detail">更新版本</li>
+			</ul>
+		</div>						
+	
+</div>
+<!-- 弹窗遮罩-->
+<div class="mask"></div>
+
+<!-- 弹窗-->
+<!-- 调用dialog.show(标题，内容) -->
+<div class="tan tan_check">
+	<div class="close"></div>
+	<div class="title"></div>
+	<div class="content">
+		<p></p>
+		<a href="javascript:void(0);" class="sure">确定</a>
+	</div>	
+</div>
+<!-- 更新版本 -->
+<div class="tan tan_upLevel">
+	<div class="close"></div>
+	<div class="title">更新游戏版本</div>
+	<div class="content">
+		<!-- <input type="button" id="upV" value="更新游戏版本"/> -->
+		<div class="apk">
+			<label>APK：</label>
+			<div>上传</div>
+		</div>
+		<div class="platform">
+			<label>游戏平台：</label>
+			<span>Android</span>
+		</div>
+		<div class="gameType">
+			<p>
+				<label>游戏种类：</label>
+				<select>
+					<option>网游</option>
+					<option>单机</option>
+				</select>
+			</p>	
+			<p>
+				<label><input type="radio" name="type" value=""/>移动MM</label>
+				<label><input type="radio" name="type" value=""/>移动基地</label>
+				<label><input type="radio" name="type" value=""/>移动联通</label>
+				<label><input type="radio" name="type" value=""/>电信</label>
+			</p>
+			<p>
+				<label>其他</label>
+				<input type="text" name=""/>
+			</p>	
+		</div>
+		<div class="gameType2">
+			<label>游戏类型：</label>
+			<select>
+				<option>跑酷竞速</option>
+				<option>天天消除</option>
+				<option>休闲益智</option>
+				<option>换装养成经营</option>
+				<option>音乐舞蹈</option>
+				<option>塔防策略</option>
+				<option>动作射击</option>
+				<option>棋牌桌游</option>	
+			</select>
+		</div>
+		<div class="size">
+			<label>游戏大小：</label>
+			<input type="text" name=""/>MB
+		</div>
+		<div class="gameVersion">
+			<label>游戏版本：</label>
+			<input type="text" name=""/>
+		</div>		
+		<div class="packName">
+			<label>应用包名：</label>
+			<input type="text" name="" placeholder="如：com.forgame.mmxd.meitu" />
+		</div>
+		<div class="upd">
+			<label>首发/更新时间：</label>
+			<input type="date" name="">
+			<font>首发游戏、有更新时间要求的游戏则需要填写</font>
+		</div>
+		<div class="explain">
+			<label>版本更新说明：</label>
+			<textarea></textarea>
+		</div>
+	</div>
+	<input class="tan_upLevel_bt" type="button" name="" value="提交">		
+</div>
+
+<!-- 修改游戏信息 -->
+<div class="tan tan_cI">
+	<div class="close"></div>
+	<div class="title">修改游戏信息</div>
+	<div class="content">
+		<div class="guide">
+			<a href="javascript:void(0);">基本信息</a>
+			<a href="javascript:void(0);">图片</a>
+			<a href="javascript:void(0);">修改说明</a>
+		</div>
+		<!-- 基本信息 -->
+		<div class="tab tab_changI_if">
+			<div class="cGname">
+				<label>游戏说明：</label>
+				<input type="text"  maxlength="13" name="" placeholder="不超过13个字，建议游戏名称与APK包中文名称一致"/>
+			</div>
+			<div class="cGsummery">
+				<label>游戏简介：</label>
+				<input type="text"  maxlength="18"name="" placeholder="不超过18个字符" />
+			</div>
+			<div class="cGdetail">
+				<label>详情介绍：</label>
+				<textarea  maxlength="500" placeholder="请介绍下您的游戏，不超过500字;1.首段介绍游戏核心内容以便玩家能更快获取游戏信息;2.第二段开始介绍本游戏的背景、内容、特色等版本更新时间可在段末加上更新内容，首次提交不必填写"></textarea>
+			</div>
+			<input class="cGpost" type="button" value="提交" />
+		</div>
+		<!-- 图片 -->
+		<div class="tab tab_changI_icon">
+			<div class="cGicon">
+				<label>游戏icon：</label>
+				<input class="btn upIcon" type="button" name="" value="上传"/>
+				<div class="exp1">
+					<img  src="img/exp1.png"/>
+					<ol>
+						<li>需在右边加美图游戏盒角标，优先右下角；</li>
+						<li>图片尺寸为134*134，大小不超过100KBPNG，格式+透明底；</li>
+						<li>图形为圆角矩形；</li>
+					</ol>
+				</div>
+			</div>
+			<div class="cGicon2">
+				<label>游戏icon：</label>
+				<div class="pics">
+				<font>请上传4-5张720*1280尺寸高质量游戏截图（限jpg,jpeg格式，每张图大小最大为200K）</font>
+				<ul>
+					<li class="exp2">
+						<img src="img/exp2.png"/>
+						<input class="btn" type="button" name="" value="上传"/>
+					</li>
+					<li class="exp2">
+						<img src="img/exp2.png"/>
+						<input class="btn" type="button" name="" value="上传"/>
+					</li>
+					<li class="exp2">
+						<img src="img/exp2.png"/>
+						<input class="btn" type="button" name="" value="上传"/>
+					</li>
+					<li class="exp2">
+						<img src="img/exp2.png"/>
+						<input class="btn" type="button" name="" value="上传"/>
+					</li>
+					<li class="exp2">
+						<img src="img/exp2.png"/>
+						<input class="btn" type="button" name="" value="上传"/>
+					</li>
+				</ul>
+				</div>
+			</div>
+			<input class="cG2post" type="button" value="提交" />
+		</div>
+		<!-- 修改说明 -->
+		<div class="tab tab_changI_dt">
+			<div>
+				<label>修改说明</label>
+				<textarea></textarea>			
+			</div>
+			<input class="cGpost" type="button" value="提交" />
+		</div>
+	</div>		
+</div>
+
+<!-- 新手礼包 -->
+<div class="tan tan_gift">
+	<div class="close"></div>
+	<div class="title">礼包福利</div>
+	<div class="content">
+		<table border="1" cellspacing="0">
+			<tr>
+				<th>礼包名称</th>
+				<th>礼包内容</th>
+				<th>剩余数量</th>
+				<th>有效截止时间</th>
+				<th>操作</th>
+			</tr>
+			<tr>
+				<th>新手礼包</th>
+				<th>1213</th>
+				<th>321321</th>
+				<th>2016-06-08</th>
+				<th><span class="sp">补充</span>|<span class="de">删除</span></th>
+			</tr>
+		</table>
+		<input class="btn" type="button" name="" value="礼包上传" />
+		<div class="giftName">
+			<label>礼包名称：</label>
+			<input type="text" name=""/>
+		</div>
+		<div class="giftCon">
+			<label>礼包内容：</label>
+			<input type="text" name="" placeholder='物品道具之间使用“,”或“、”分隔开'/>
+		</div>
+		<div class="giftWay">
+			<label>礼包兑换方式：</label>
+			<input type="text" name=""/>
+		</div>
+		<div class="giftDate">
+			<label>有效截止时间：</label>
+			<input type="text" name=""/>
+		</div>
+		<div class="giftUp">
+			<label>礼包上传：</label>
+			<input class="btn" type="button" name="" value="上传激活码"/>
+			<font>必须选择.txt格式文本文件上传</font>
+		</div>
+		<input class="giftInput" type="button" value="提交" />			
+	</div>
+	
+</div>
+<!-- 礼包上传之上传激活码 -->
+<div class="tan_tan">
+	<div class="tan tan_code">
+		<div class="close"></div>
+		<div class="content">
+			<label>礼包上传：</label>
+			<input class="upCode" type="button" name="" value="上传激活码" />
+			<font>必须选择.txt格式文本文件上传</font>
+			<input type="button" name="" value="提交" />		
+		</div>
+	</div>
+</div>
+<!-- 下架申请 -->
+<div class="tan tan_pull">
+	<div class="close"></div>
+	<div class="title">下架申请</div>
+	<div class="content">
+	<div>
+		<label>说明：</label>
+		<textarea></textarea>
+	</div>
+		<input class="pullpost" type="button" value="提交" />
+	</div>
+</div>
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>

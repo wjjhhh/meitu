@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>美图游戏盒开放平台</title>
+	<meta name="description" content="'美图游戏盒'是由Forgame集团与美图公司联袂打造的时尚轻游戏平台。不仅带你同步尽享全球超人气手机游戏，更以精奢界面呈现至美交互体验，是女性玩家的首选游戏APP">
+	<meta name="keywords" content="美图游戏,美图游戏盒,美图游戏盒官方下载,美图官网">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/public.css">
+	<link rel="stylesheet" href="css/tab.css">
+	<link rel="stylesheet" href="css/create.css">
+	<script src="js/head.js"></script>
+</head>
+<body>
+  <iframe frameboder="0" scrolling="no" width="100%" height="139" src="head.html" style="border:none;"></iframe> 
+  <div id="content">
+		<ul id="tab"><li><a href="document.html">文档</a></li><li class="on"><a href="homegage.html">我的游戏</a></li><li><a href="connect.html">联系我们</a></li></ul>
+  </div>
+  <div class="bline"></div>  
+
+<div id="wrap">
+	<!-- 游戏创建-->
+	<div id="create">
+	    <div class="title">游戏创建</div>
+		<div class="list name">
+			<label>游戏名称：</label><input type="text" maxlength="13" name="" placeholder="不超过13个字，建议游戏名称与APK包中文名称一致"/>
+		</div>
+		<div class="list detail1">
+			<label>游戏简介：</label><input type="text" maxlength="13" name="" placeholder="不超过13个字符" />
+		</div>
+		<div class="list detail2">
+			<label>详情介绍：</label>
+			<textarea maxlength="500" placeholder="请介绍下您的游戏，不超过500字;1.首段介绍游戏核心内容以便玩家能更快获取游戏信息;2.第二段开始介绍本游戏的背景、内容、特色等版本更新时间可在段末加上更新内容，首次提交不必填写"></textarea>
+		</div>
+	</div>
+	<!-- 完善游戏信息 -->
+	<div id="gameInfo">
+	    <div class="title">完善游戏信息</div>
+		<div class="list APK">
+			<label>APK：</label>
+			<input type="button" name="" value="上传">
+		</div>
+		<div class="list platform">
+			<label>游戏平台：</label>
+			<font>Android</font>
+		</div>
+		<div class="list type">
+			<p>
+				<label>游戏种类：</label>
+				<select>
+					<option>单机</option>
+					<option>网游</option>
+				</select>
+			</p>
+			<p class="choose">
+				<label><input type="checkbox" name="type"/>移动MM</label>
+				<label><input type="checkbox" name="type"/>移动基地</label>
+				<label><input type="checkbox" name="type"/>联通</label>
+				<label><input type="checkbox" name="type"/>电信</label>
+			</p>
+			<p class="choose other">
+				<label>其他</label><input type="text" name=""/>
+			</p>
+		</div>
+		<div class="list type2">
+			<label>游戏类型：</label>
+			<select>
+				<option>跑酷竞速</option>
+				<option>天天消除</option>
+				<option>休闲益智</option>
+				<option>换装养成经营</option>
+				<option>音乐舞蹈</option>
+				<option>塔防策略</option>
+				<option>动作射击</option>
+				<option>棋牌桌游</option>	
+				<option>角色扮演</option>							
+			</select>			
+		</div>
+		<div class="list size">
+			<label>游戏大小：</label><input type="text" name=""/>MB
+		</div>
+		<div class="list version">
+			<label>游戏版本：</label><input type="text" name=""/>
+		</div>
+		<div class="list pack">
+			<label>应用包名：</label><input type="text" name=""/>
+		</div>
+		<div class="list pull">
+			<label>首发/更新时间：</label><input type="date" name=""/>
+			<font>首发游戏、有更新时间要求的游戏则需要填写</font>
+		</div>
+	</div>	
+	<!-- 图片上传 -->
+	<div id="iconUp">
+		<div class="title">图片上传</div>
+		<div class="list icon">
+			<label>游戏icon：</label><input type="button" name="" value="上传" />
+			<div>
+				<img class="iconExp" src="img/exp1.png"/>
+				<ol>
+					<li>需在右边加美图游戏盒角标，优先右下角；</li>
+					<li>图片尺寸为134*134，大小不超过100KBPNG，格式+透明底；</li>
+					<li>图形为圆角矩形；</li>
+				</ol>
+			</div>		
+		</div>
+		<div class="list icon2">
+			<label>游戏icon：</label>
+			<font>请上传4-5张720*1280尺寸高质量游戏截图（限jpg,jpeg格式，每张图大小最大为200K）</font>
+			<ul>
+				<li class="exp2">
+					<img src="img/exp2.png"/>
+					<input class="btn" type="button" name="" value="上传"/>
+				</li>
+				<li class="exp2">
+					<img src="img/exp2.png"/>
+					<input class="btn" type="button" name="" value="上传"/>
+				</li>
+				<li class="exp2">
+					<img src="img/exp2.png"/>
+					<input class="btn" type="button" name="" value="上传"/>
+				</li>
+				<li class="exp2">
+					<img src="img/exp2.png"/>
+					<input class="btn" type="button" name="" value="上传"/>
+				</li>
+				<li class="exp2">
+					<img src="img/exp2.png"/>
+					<input class="btn" type="button" name="" value="上传"/>
+				</li>
+			</ul>	
+		</div>		
+	</div>
+	<!-- 填写完成，提交审核 -->
+	<div id="post">
+		<input  type="button" name="" value="填写完成，提交审核"/>
+	</div>
+	
+</div>
+
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,182 @@
+﻿.label {
+  width: 125px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 10px;
+  display: inline-block;
+  text-align: right;
+  vertical-align: -2px;
+}
+.input_text {
+  display: inline-block;
+  width: 335px;
+  height: 30px;
+  box-sizing: border-box;
+  padding: 0 2px;
+}
+.btn {
+  display: inline-block;
+  width: 72px;
+  height: 38px;
+  background-color: #169bd5;
+  line-height: 38px;
+  border: 0;
+  color: #fff;
+  border-radius: 6px;
+}
+.list {
+  position: relative;
+  line-height: 30px;
+  margin: 10px auto;
+}
+label {
+  width: 125px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 10px;
+  display: inline-block;
+  text-align: right;
+  vertical-align: -2px;
+}
+input,
+textarea {
+  margin-left: 5px;
+}
+input[type="text"] {
+  display: inline-block;
+  width: 335px;
+  height: 30px;
+  box-sizing: border-box;
+  padding: 0 2px;
+}
+input[type="checkbox"] {
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  background-color: #fff;
+  vertical-align: middle;
+}
+input[type="button"] {
+  display: inline-block;
+  width: 72px;
+  height: 38px;
+  background-color: #169bd5;
+  line-height: 38px;
+  border: 0;
+  color: #fff;
+  border-radius: 6px;
+}
+textarea {
+  display: inline-block;
+  width: 335px;
+  height: 100px;
+  line-height: 1.6;
+  padding: 0 2px;
+}
+select {
+  height: 30px;
+  border: none;
+  font-size: 12px;
+}
+#create,
+#gameInfo,
+#iconUp,
+#post {
+  width: 700px;
+  margin: 30px auto;
+  overflow: hidden;
+  padding-bottom: 24px;
+  border-bottom: 1px dotted red;
+}
+#create .title,
+#gameInfo .title,
+#iconUp .title,
+#post .title {
+  font-size: 25px;
+  display: inline-block;
+  font-weight: bold;
+  margin: 10px 0 10px;
+}
+#create .detail2 label,
+#create .detail2 textarea {
+  float: left;
+}
+#gameInfo .APK input {
+  margin-left: -2px;
+}
+#gameInfo .choose {
+  margin-left: 142px;
+}
+#gameInfo .choose label {
+  font-size: 13px;
+  font-weight: normal;
+  text-align: center;
+  margin-right: 25px;
+  display: inline;
+}
+#gameInfo .choose label input {
+  margin-right: 5px;
+}
+#gameInfo .platform {
+  font-size: 13px;
+}
+#gameInfo .other input {
+  width: 250px;
+}
+#gameInfo .size input {
+  width: 100px;
+  margin-right: 8px;
+}
+#gameInfo .version input {
+  width: 100px;
+}
+#gameInfo .pack input {
+  width: 250px;
+}
+#gameInfo .pull input {
+  width: 200px;
+}
+#gameInfo .pull font {
+  color: red;
+}
+#iconUp ul {
+  margin: 20px 0 10px 147px;
+}
+#iconUp .icon > div {
+  margin-top: 20px;
+}
+#iconUp .icon img {
+  width: 134px;
+  height: 134px;
+  vertical-align: middle;
+  margin-left: 147px;
+}
+#iconUp .icon ol {
+  width: 250px;
+  display: inline-block;
+  vertical-align: middle;
+}
+#iconUp .icon2 img {
+  width: 157px;
+  height: 179px;
+}
+#iconUp .icon2 li {
+  float: left;
+  width: 160px;
+  text-align: center;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+#post input {
+  display: inline-block;
+  width: 72px;
+  height: 38px;
+  background-color: #169bd5;
+  line-height: 38px;
+  border: 0;
+  color: #fff;
+  border-radius: 6px;
+  display: block;
+  width: 150px;
+  margin: 0 auto;
+}
